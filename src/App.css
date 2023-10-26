@@ -1,0 +1,211 @@
+:root {
+  --yellow: #ffda1d;
+  --cyan: #02a4ed;
+  --magenta: #ea2083;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: fit-content;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h5 {
+  font-family: Helvetica, sans-serif;
+  max-width: 100%;
+  
+}
+
+.header{
+  width: 100%;
+  min-height: 300px;
+  height: 300px;
+  max-height: min-content;
+  background-image: url(./assets/header-pc.jpg);
+  background-size: cover;
+}
+
+.header h1 {
+  color: white;
+  font-size: 80px;
+  z-index: 1;
+  position: relative;
+  transform: translateY(70px);
+  filter: drop-shadow(5px -2px 2px #00000060);
+}
+
+.header h3 {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-size: 50px;
+  background-color: #55555570;
+  padding-top: 10px;
+  margin-top: 35px;
+  padding-left: 20px;
+}
+
+.icon {
+  width: 150px;
+  object-fit: contain;
+}
+
+.art-about-us h5{
+  font-size: 18px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.art-about-us section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art-about-us section .img{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img img{
+  width: 90%;
+  padding: 20px;
+  background-color: var(--magenta);
+}
+
+.art-about-us section .p {
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.art-services {
+  width: 100%;
+}
+
+.art-services h3{
+  font-size: 24px;
+  color: var(--magenta);
+  padding: 20px;
+}
+
+.art-services-div {
+  width: 100%;
+  background-image: url(./assets/inta-pum.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.art-services-div section{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  max-width: 30%;
+}
+
+.contenedor {
+  width: 100%;
+  background: linear-gradient(to right, var(--cyan) 25%, var(--magenta) 25%, var(--magenta) 50%, var(--yellow) 50%, var(--yellow) 75%, black 75%);
+  /* Otra forma de definir un fondo degradado en modelo YCMK:
+  background: linear-gradient(to right, 
+              rgba(0, 255, 255, 1) 25%, 
+              rgba(255, 0, 255, 1) 25%, 
+              rgba(255, 0, 255, 1) 50%, 
+              rgba(255, 255, 0, 1) 50%, 
+              rgba(255, 255, 0, 1) 75%, 
+              rgba(0, 0, 0, 1) 75%);
+  */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+}
+
+.contenedor h3 {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+footer {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .art-about-us section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  .art-about-us section .img{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .art-about-us section .p {
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .art-services-div {
+    width: 100%;
+    background-image: url(./assets/inta-pum-phone.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .art-services-div section{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card {
+    max-width: 83%;
+    margin-bottom: 10px;
+  }  
+
+}
+
